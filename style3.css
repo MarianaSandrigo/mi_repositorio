@@ -1,0 +1,391 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+/*---------encabezado----------------*/
+
+header {
+  background-image: url(../img/huelgafeminista.jpg);
+  background-repeat: no-repeat;
+  background-color: #3C096C;
+  height: 5%;
+  padding: 1em;
+}
+
+
+
+.tituloHeader {
+  text-align: center;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #E0AAFF;
+  font-size: 30px;
+
+}
+
+nav li {
+  display: inline-block;
+  align-items: center;
+  background-color: #F5F3F7;
+  padding: 10px;
+  border: 2px solid #10002B;
+  border-radius: 10%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #240046;
+  font-weight: 700;
+}
+
+/*---------footer----------------*/
+footer {
+  margin: 900px 0 0 0;
+  background-color: #bdbac0;
+  height: 25%;
+  width: 100%;
+  border-top: 2px #240046 solid;
+
+}
+
+.footer h3 {
+  color: #240046;
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.redesFooter {
+  display: inline;
+  padding: 15px;
+}
+
+.redesFooter img {
+  height: 100%;
+  width: 3%;
+  border-radius: 50%;
+  border: 1px solid#bdbac0;
+}
+
+/*-------------------index--------------------*/
+h2 {
+  text-align: center;
+  color: #240046;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+p {
+  font-size: larger;
+  line-height: 35px;
+}
+
+.imgIndex {
+  height: 300px;
+  width: 500px;
+  position: relative;
+  left: 60%;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.conocenos {
+  height: 20%;
+  width: 40%;
+  position: relative;
+  top: 50px;
+  left: 200px;
+}
+
+.conocenosImg {
+  position: relative;
+  top: -200px;
+}
+
+.donarImg {
+  height: 10%;
+  width: 90%;
+  background-color: #efedf0;
+  position: relative;
+  left: 90px;
+  bottom: 150px;
+}
+
+.donar {
+  height: 20%;
+  width: 40%;
+  position: relative;
+  top: 100px;
+  left: 200px;
+}
+.imgDonar {
+  position: relative;
+  top: -100px;
+  left: 1050px;
+}
+.indexTalleres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #bdbac0;
+}
+
+.cajaTalleres img {
+  height: 300px;
+  width: 380px;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+/*--------------quienessomosPage--------------*/
+.article {
+  padding: 5%;
+  margin: 3%;
+  background-color: #e2c2f5;
+  border: 1px solid #240046;
+}
+
+/*--------------grid mobile--------------*/
+@media only screen and (max-width: 480px) {
+
+  .quienesSomos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 55px;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: "historia"
+      "objetivos"
+      "centroDia "
+      "socios";
+  }
+
+  article.historia {
+    grid-area: historia;
+  }
+
+  article.objetivos {
+    grid-area: objetivos;
+  }
+
+  article.centroDia {
+    grid-area: centroDia;
+  }
+
+  article.socios {
+    grid-area: socios;
+
+  }
+}
+
+/*--------------grid tablet--------------*/
+@media only screen and (min-width: 481px) and (max-width:968px) {
+
+  .quienesSomos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 50%);
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: "historia historia"
+      "objetivos socios"
+      "centroDia centroDia";
+  }
+
+  article.historia {
+    grid-area: historia;
+  }
+
+  article.objetivos {
+    grid-area: objetivos;
+  }
+
+  article.centroDia {
+    grid-area: centroDia;
+  }
+
+  article.socios {
+    grid-area: socios;
+  
+  }
+}
+
+/*--------------grid escritorio--------------*/
+@media screen and (min-width: 969px) {
+
+  .quienesSomos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 25px;
+    padding: 10px;
+    grid-template-areas:
+      "historia objetivos"
+      "centroDia socios";
+  }
+
+  article.historia {
+    grid-area: historia;
+  }
+
+  article.objetivos {
+    grid-area: objetivos;
+  }
+
+  article.centroDia {
+    grid-area: centroDia;
+  }
+
+  article.socios {
+    grid-area: socios;
+  }
+}
+
+/*--------------donar--------------*/
+@media only screen and (max-width: 480px) {
+  .cajaPageDonar {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 75% 12, 5% 12, 5%;
+    gap: 10px;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: "comoDonar"
+      "publicidad"
+      "sponsor";
+  }
+
+  div .comoDonar {
+    grid-area: comoDonar;
+  }
+
+  div .publicidad {
+    grid-area: publicidad;
+  }
+
+  div .sponsor {
+    grid-area: sponsor;
+  }
+
+  .publicidad {
+    background: green;
+  }
+
+  .sponsor {
+    background: blue;
+  }
+
+  .comoDonar {
+    background-color: #efedf0;
+    padding: 1%;
+    margin: 5%;
+    color: #240046;
+    font-weight: 100;
+    font-size: small;
+    max-width: 0, 9 fr;
+  }
+
+  .comoDonar h2 {
+    font-size: small;
+  }
+}
+
+@media only screen and (min-width:481px) and (max-width:968px) {
+
+  .cajaPageDonar {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    gap: 20px;
+    grid-template-columns: "auto";
+    grid-template-rows: "auto auto auto";
+    grid-template-areas: "publicidad"
+      "comoDonar"
+      "sponsor";
+  }
+
+  div.publicidad {
+    grid-area: publicidad;
+  }
+
+  div.comoDonar {
+    grid-area: comoDonar;
+  }
+
+  div.sponsor {
+    grid-area: sponsor;
+  }
+
+  .publicidad {
+    background: green;
+  }
+
+  .sponsor {
+    background: blue;
+  }
+
+  .comoDonar {
+    background-color: #efedf0;
+    padding: 5%;
+    margin: 10%;
+    color: #240046;
+    font-weight: 300;
+    font-size: medium;
+  }
+
+  .comoDonar h2 {
+    font-size: large;
+  }
+}
+
+@media only screen and (min-width: 969px) {
+  .cajaPageDonar {
+    display: grid;
+    grid-template-columns: 75% auto;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+    width: 100vw;
+    gap: 20px;
+    grid-template-areas: "comoDonar publicidad"
+      "comoDonar publicidad"
+      "sponsor sponsor";
+  }
+
+  div.comoDonar {
+    grid-area: comoDonar;
+  }
+
+  div.publicidad {
+    grid-area: publicidad;
+  }
+
+  div.sponsor {
+    grid-area: sponsor;
+  }
+
+  .publicidad {
+    background: green;
+  }
+
+  .sponsor {
+    background: blue;
+  }
+
+  .comoDonar {
+    background-color: #efedf0;
+    padding: 5%;
+    margin: 10%;
+    color: #240046;
+    font-weight: 400;
+    font-size: large;
+  }
+
+  .comoDonar h2 {
+    font-size: larger;
+  }
+}

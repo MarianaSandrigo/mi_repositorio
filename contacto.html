@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="tituloHeader">Fundación Mujeres</h1>
+        <h2 class="tituloHeader">Espacio de igualdad</h2>
+
+        <div class="logo">
+            <img src="../img/logo.jfif" alt="logclao" class="imgLogo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Index.html">Inicio</a></li>
+                <li><a href="quienessomos.html">Quiénes somos</a></li>
+                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="donaciones.html">Cómo Donar</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section class="formStyle">
+        <h1>Contactanos</h1>
+        <form action="" method="get">
+            <fieldset >
+                <legend>Completá tus datos</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"><br>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@mail.com" required><br>
+
+                <label for="mujer">Mujer</label>
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="hombre" name="sexo" value="hombre">
+                <label for="otro">Otro</label>
+                <input type="radio" id="otro" name="sexo" value="otro">
+                <div>
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+
+                    <select name="dia" id="dia">
+                        <option value="0" selected disabled>Día</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select name="mes" id="mes">
+                        <option value="0" selected disabled>Mes</option>
+                        <option value="1">Ene</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Abr</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Ago</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dic</option>
+                    </select>
+
+
+                    <select name="anio" id="anio">
+                        <option value="0" selected disabled>Año</option>
+                        <option value="1">2005</option>
+                        <option value="2">2004</option>
+                        <option value="3">2003</option>
+                        <option value="4">2002</option>
+                        <option value="5">2001</option>
+                        <option value="6">2000</option>
+                        <option value="7">1999</option>
+                        <option value="8">1998</option>
+                        <option value="9">1997</option>
+                        <option value="10">1996</option>
+                        <option value="11">1995</option>
+                        <option value="12">1994</option>
+                        <option value="13">1993</option>
+                        <option value="14">1992</option>
+                        <option value="15">1991</option>
+                        <option value="16">1990</option>
+                        <option value="17">1989</option>
+                        <option value="18">1988</option>
+                        <option value="19">1987</option>
+                        <option value="20">1986</option>
+                        <option value="21">1985</option>
+                        <option value="22">1984</option>
+                        <option value="23">1983</option>
+                        <option value="24">1982</option>
+                        <option value="25">1981</option>
+                        <option value="26">1980</option>
+                        <option value="27">1979</option>
+                        <option value="28">1978</option>
+                        <option value="29">1977</option>
+                        <option value="30">1976</option>
+                        <option value="31">1975</option>
+                    </select></div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Dejanos tu mensaje</legend>
+                <textarea name="mensaje" cols="30" rows="10" placeholder="Escribe aqui tu mensaje"
+                    required></textarea><br>
+                <label for="checkinfo">Acepto recibir información sobre Fundación Mujeres </label>
+                <input type="checkbox" id="checkinfo" name="recibirInfo" required>
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="botonForm">
+    </section>
+    </form>
+
+
+
+    <footer>
+        <h3>Seguinos en Redes sociales:</h3>
+        <ul>
+            <li class="redesFooter"><a href="https://www.instagram.com/" target="blank"><img src="../img/iconoIg.PNG"
+                        alt="Enlace instagram"></a></li>
+            <li class="redesFooter"><a href="https://www.facebook.com/" target="blank"><img src="../img/iconofb.PNG"
+                        alt="Enlace Facebook"></a></li></a></li>
+            <li class="redesFooter"><a href="https://www.whatsapp.com/" target="blank"><img src="../img/iconoWs.PNG"
+                        alt="Enlace Whatsapp"></a></li></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
