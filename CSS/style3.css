@@ -14,15 +14,12 @@ header {
   padding: 1em;
 }
 
-
-
 .tituloHeader {
   text-align: center;
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #E0AAFF;
   font-size: 30px;
-
 }
 
 nav li {
@@ -69,74 +66,69 @@ footer {
 }
 
 /*-------------------index--------------------*/
-h2 {
-  text-align: center;
-  color: #240046;
-  text-decoration: underline;
-  font-size: 30px;
+.grilla {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-template-areas: "conocenos conocenosImg"
+    "donar donarImg"
+    "indexTalleres indexTalleres"
 }
 
-p {
-  font-size: larger;
-  line-height: 35px;
+section .conocenos {
+  grid-area: conocenos;
+}
+
+div .conocenosImg {
+  grid-area: conocenosImg;
+}
+
+section .donar {
+  grid-area: donar;
+}
+
+div .donarImg {
+  grid-area: donarImg;
+ }
+section .indexTalleres {
+  grid-area: indexTalleres;
 }
 
 .imgIndex {
-  height: 300px;
-  width: 500px;
-  position: relative;
-  left: 60%;
-  border-radius: 10px;
-  border: 1px solid gray;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 5%;
+  border: 1px solid grey;
+  
 }
 
-.conocenos {
-  height: 20%;
-  width: 40%;
-  position: relative;
-  top: 50px;
-  left: 200px;
-}
-
-.conocenosImg {
-  position: relative;
-  top: -200px;
-}
-
-.donarImg {
-  height: 10%;
-  width: 90%;
-  background-color: #efedf0;
-  position: relative;
-  left: 90px;
-  bottom: 150px;
-}
-
-.donar {
-  height: 20%;
-  width: 40%;
-  position: relative;
-  top: 100px;
-  left: 200px;
-}
-.imgDonar {
-  position: relative;
-  top: -100px;
-  left: 1050px;
+.caja{
+  
+  background-color: #F5F3F7;
+  padding:50px;
+  margin: 10px 0;
 }
 .indexTalleres {
+  width: 100vw;
+  height: 100%;
   display: flex;
+  background-color: #ebdaf5;
   flex-direction: row;
-  justify-content: space-around;
-  background-color: #bdbac0;
+  flex-wrap: wrap;
+
+
+
+}
+.cajaTalleres{
+  padding: 1%;
+  margin: 1%;
+
+}
+#tituloTalleres{
+flex:1
 }
 
-.cajaTalleres img {
-  height: 300px;
-  width: 380px;
-  border-radius: 20px;
-  border: 1px solid grey;
-}
 /*--------------quienessomosPage--------------*/
 .article {
   padding: 5%;
@@ -210,7 +202,7 @@ p {
 
   article.socios {
     grid-area: socios;
-  
+
   }
 }
 
