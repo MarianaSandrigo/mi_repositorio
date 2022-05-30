@@ -9,7 +9,7 @@ body {
 header {
   background-image: url(../img/huelgafeminista.jpg);
   background-repeat: no-repeat;
-  background-color: #3C096C;
+  background-color:  #3C096C;
   height: 5%;
   padding: 1em;
 }
@@ -20,21 +20,46 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #E0AAFF;
   font-size: 30px;
+  transform: translateX(10%)
+
 }
+
 
 nav li {
   display: inline-block;
   align-items: center;
-  background-color: #F5F3F7;
   padding: 10px;
   border: 2px solid #10002B;
   border-radius: 10%;
+  background-image: linear-gradient(to top, #F5F3F7, #d1aff1 );
 }
-
+nav li:hover{
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #F5F3F7;
+  text-decoration: underline;
+}
 nav a {
   text-decoration: none;
   color: #240046;
   font-weight: 700;
+}
+.botonIndex{
+  padding: 15px;
+  background-color: #9280a3;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: all 0,5s;
+}
+.botonIndex a{
+  color: #10002B;
+  text-decoration: none;
+}
+.botonIndex:hover{
+background-color: #c9c6cb;
+padding: 20px;
+font-size: large;
+transform: translateX(5%);
 }
 
 /*---------footer----------------*/
@@ -100,6 +125,7 @@ section .indexTalleres {
   height: 20rem;
   border-radius: 5%;
   border: 1px solid grey;
+
   
 }
 
