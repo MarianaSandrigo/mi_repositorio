@@ -6,43 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style3.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <h1 class="tituloHeader">Fundación Mujeres</h1>
-        <h2 class="tituloHeader">Espacio de igualdad</h2>
-
-        <div class="logo">
-            <img src="../img/logo.jfif" alt="logclao" class="imgLogo">
+        <div>
+            <h1 class="tituloHeader">Fundación Mujeres</h1>
+            <h2 class="tituloHeader">Espacio de igualdad</h2>
         </div>
-        <nav>
-            <ul>
-                <li><a href="../Index.html">Inicio</a></li>
-                <li><a href="quienessomos.html">Quiénes somos</a></li>
-                <li><a href="talleres.html">Talleres</a></li>
-                <li><a href="donaciones.html">Cómo Donar</a></li>
-                <li><a href="#">Contactanos</a></li>
-            </ul>
+        <!--<div class="logo">
+                <img src="./img/logo.jfif" alt="logo" class="imgLogo">
+            </div>-->
+        <nav class="navbarn navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="transparente">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../Index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="talleres.html">Talleres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donaciones.html">Cómo donar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactanos</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </nav>
-
     </header>
-    <section class="formStyle">
-        <h1>Contactanos</h1>
+
+    <section class="container cajaForm">
+        <div class=" row align-items-center">
+            <div class="col">
+        <h1 class="display-1">Contactanos</h1>
         <form action="" method="get">
-            <fieldset >
+            <fieldset>
+
                 <legend>Completá tus datos</legend>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre" required>
-
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"><br>
-
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@mail.com" required><br>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre" required>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"><br>
+                    </div>
+                    <div class="form-control-md">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required><br>
+                    </div>
+                </div>
 
                 <label for="mujer">Mujer</label>
                 <input type="radio" id="mujer" name="sexo" value="mujer">
@@ -50,6 +82,7 @@
                 <input type="radio" id="hombre" name="sexo" value="hombre">
                 <label for="otro">Otro</label>
                 <input type="radio" id="otro" name="sexo" value="otro">
+                </div>
                 <div>
                     <label for="fechaNacimiento">Fecha de nacimiento</label>
 
@@ -150,6 +183,8 @@
 
             <input type="submit" value="Enviar" class="botonForm">
     </section>
+</div>
+</div>
     </form>
 
 
@@ -165,6 +200,9 @@
                         alt="Enlace Whatsapp"></a></li></a></li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
