@@ -9,47 +9,43 @@
     <link rel="stylesheet" href="../CSS/style3.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/97e7fc6f3c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1 class="tituloHeader">Fundación Mujeres</h1>
-            <h2 class="tituloHeader">Espacio de igualdad</h2>
-        </div>
-        <!--<div class="logo">
-                <img src="./img/logo.jfif" alt="logo" class="imgLogo">
-            </div>-->
-        <nav class="navbarn navbar-expand-lg navbar-light bg-light">
+    <header class=colorHeader>
+        <nav class="navbar navbar-expand-lg navbar-dark border-3 colorA">
             <div class="container-fluid">
-
+                <a class="navbar-brand " href="#"><img src="../img/logo.PNG" alt="logo" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="transparente">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../Index.html">Inicio</a>
+                            <a class="nav-link active colorA" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="talleres.html">Talleres</a>
+                            <a class="nav-link colorA" href="donaciones.html">Asociate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="donaciones.html">Cómo donar</a>
+                            <a class="nav-link colorA" href="#">Contactanos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contactanos</a>
+                            <a class="nav-link colorA" href="talleres.html">Nuestros Talleres</a>
                         </li>
-
                     </ul>
+                    <div class="d-flex">
+                        <button class="btn btn-outline-success " type="submit">DONAR AHORA</button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -58,119 +54,121 @@
     <section class="container cajaForm">
         <div class=" row align-items-center">
             <div class="col">
-        <h1 class="display-1">Contactanos</h1>
-        <form action="" method="get">
-            <fieldset>
+                <h1>Contactanos</h1>
+                <form action="" method="get">
+                    <fieldset>
 
-                <legend>Completá tus datos</legend>
-                <div class="row">
-                    <div class="col-sm-12 col-lg-6">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre" required>
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"><br>
-                    </div>
-                    <div class="form-control-md">
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required><br>
-                    </div>
-                </div>
+                        <legend>Completá tus datos</legend>
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-6">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" placeholder="Escribe tu nombre" name="nombre" required>
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"><br>
+                            </div>
+                            <div class="form-control-md">
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" id="email" name="email" placeholder="ejemplo@email.com"
+                                    required><br>
+                            </div>
+                        </div>
 
-                <label for="mujer">Mujer</label>
-                <input type="radio" id="mujer" name="sexo" value="mujer">
-                <label for="hombre">Hombre</label>
-                <input type="radio" id="hombre" name="sexo" value="hombre">
-                <label for="otro">Otro</label>
-                <input type="radio" id="otro" name="sexo" value="otro">
-                </div>
-                <div>
-                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" id="mujer" name="sexo" value="mujer">
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" id="hombre" name="sexo" value="hombre">
+                        <label for="otro">Otro</label>
+                        <input type="radio" id="otro" name="sexo" value="otro">
+            </div>
+            <div>
+                <label for="fechaNacimiento">Fecha de nacimiento</label>
 
-                    <select name="dia" id="dia">
-                        <option value="0" selected disabled>Día</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                    </select>
-                    <select name="mes" id="mes">
-                        <option value="0" selected disabled>Mes</option>
-                        <option value="1">Ene</option>
-                        <option value="2">Feb</option>
-                        <option value="3">Mar</option>
-                        <option value="4">Abr</option>
-                        <option value="5">May</option>
-                        <option value="6">Jun</option>
-                        <option value="7">Jul</option>
-                        <option value="8">Ago</option>
-                        <option value="9">Sep</option>
-                        <option value="10">Oct</option>
-                        <option value="11">Nov</option>
-                        <option value="12">Dic</option>
-                    </select>
+                <select name="dia" id="dia">
+                    <option value="0" selected disabled>Día</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="mes" id="mes">
+                    <option value="0" selected disabled>Mes</option>
+                    <option value="1">Ene</option>
+                    <option value="2">Feb</option>
+                    <option value="3">Mar</option>
+                    <option value="4">Abr</option>
+                    <option value="5">May</option>
+                    <option value="6">Jun</option>
+                    <option value="7">Jul</option>
+                    <option value="8">Ago</option>
+                    <option value="9">Sep</option>
+                    <option value="10">Oct</option>
+                    <option value="11">Nov</option>
+                    <option value="12">Dic</option>
+                </select>
 
 
-                    <select name="anio" id="anio">
-                        <option value="0" selected disabled>Año</option>
-                        <option value="1">2005</option>
-                        <option value="2">2004</option>
-                        <option value="3">2003</option>
-                        <option value="4">2002</option>
-                        <option value="5">2001</option>
-                        <option value="6">2000</option>
-                        <option value="7">1999</option>
-                        <option value="8">1998</option>
-                        <option value="9">1997</option>
-                        <option value="10">1996</option>
-                        <option value="11">1995</option>
-                        <option value="12">1994</option>
-                        <option value="13">1993</option>
-                        <option value="14">1992</option>
-                        <option value="15">1991</option>
-                        <option value="16">1990</option>
-                        <option value="17">1989</option>
-                        <option value="18">1988</option>
-                        <option value="19">1987</option>
-                        <option value="20">1986</option>
-                        <option value="21">1985</option>
-                        <option value="22">1984</option>
-                        <option value="23">1983</option>
-                        <option value="24">1982</option>
-                        <option value="25">1981</option>
-                        <option value="26">1980</option>
-                        <option value="27">1979</option>
-                        <option value="28">1978</option>
-                        <option value="29">1977</option>
-                        <option value="30">1976</option>
-                        <option value="31">1975</option>
-                    </select></div>
+                <select name="anio" id="anio">
+                    <option value="0" selected disabled>Año</option>
+                    <option value="1">2005</option>
+                    <option value="2">2004</option>
+                    <option value="3">2003</option>
+                    <option value="4">2002</option>
+                    <option value="5">2001</option>
+                    <option value="6">2000</option>
+                    <option value="7">1999</option>
+                    <option value="8">1998</option>
+                    <option value="9">1997</option>
+                    <option value="10">1996</option>
+                    <option value="11">1995</option>
+                    <option value="12">1994</option>
+                    <option value="13">1993</option>
+                    <option value="14">1992</option>
+                    <option value="15">1991</option>
+                    <option value="16">1990</option>
+                    <option value="17">1989</option>
+                    <option value="18">1988</option>
+                    <option value="19">1987</option>
+                    <option value="20">1986</option>
+                    <option value="21">1985</option>
+                    <option value="22">1984</option>
+                    <option value="23">1983</option>
+                    <option value="24">1982</option>
+                    <option value="25">1981</option>
+                    <option value="26">1980</option>
+                    <option value="27">1979</option>
+                    <option value="28">1978</option>
+                    <option value="29">1977</option>
+                    <option value="30">1976</option>
+                    <option value="31">1975</option>
+                </select>
+            </div>
 
             </fieldset>
             <fieldset>
@@ -183,22 +181,41 @@
 
             <input type="submit" value="Enviar" class="botonForm">
     </section>
-</div>
-</div>
+    </div>
+    </div>
     </form>
 
+    <footer class="footerColor">
+        <div class="container-fluid">
+            <nav class="row">
+                <div class="col-4 text-reset text-uppercase  d-flex  align-items-center"><img src="../img/loguito.PNG"
+                        alt="logo"></div>
 
 
-    <footer>
-        <h3>Seguinos en Redes sociales:</h3>
-        <ul>
-            <li class="redesFooter"><a href="https://www.instagram.com/" target="blank"><img src="../img/iconoIg.PNG"
-                        alt="Enlace instagram"></a></li>
-            <li class="redesFooter"><a href="https://www.facebook.com/" target="blank"><img src="../img/iconofb.PNG"
-                        alt="Enlace Facebook"></a></li></a></li>
-            <li class="redesFooter"><a href="https://www.whatsapp.com/" target="blank"><img src="../img/iconoWs.PNG"
-                        alt="Enlace Whatsapp"></a></li></a></li>
-        </ul>
+                <ul class="col-4 list-unstyled menu2">
+                    <li class="font-weight-bold text-uppercase menu">Menú</li>
+                    <li><a class="text-reset" href="../index.html">Inicio</a> </li>
+                    <li><a class="text-reset" href="quienessomos.html">Quienes Somos</a></li>
+                    <li><a class="text-reset" href="donaciones.html">Asociate</a></li>
+                    <li> <a class="text-reset" href="contacto.html">Contactanos</a></li>
+                    </li><a class="text-reset" href="talleres.html">Nuestros Talleres</a></li>
+                </ul>
+
+                <ul class="col-4 list-unstyled redes">
+                    <li class="font-weight-bold text-uppercase d-flex  justify-content-between menu">Redes Sociales</li>
+                    <li><a class="text-reset" href="https://www.gmail.com/"><i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                    <li><a class="text-reset" href="https://www.instagram.com/" target="blank"><i
+                                class="fa-brands fa-instagram-square"></i></a></li>
+                    <li><a class="text-reset" href="https://www.facebook.com/" target="blank"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a class="text-reset" href="https://www.whatsapp.com/" target="blank"><i
+                                class="fa-brands fa-whatsapp-square"></i></a></li>
+
+                </ul>
+            </nav>
+        </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
