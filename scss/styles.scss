@@ -1,8 +1,7 @@
 @import 'variables';
 @import 'reset';
+@import 'mixins';
 
-
-  
   /*---------encabezado------------*/
   .colorHeader{
     background-color: $color-principal;
@@ -194,3 +193,37 @@
     grid-area: sponsor;
   }
   }
+  
+   /*--------------mapa color-redes en page contacto--------------*/
+   @each $icono, $valor in $color-redes {
+    .icono-#{$icono}{
+     background-color:$valor;
+      
+    }
+   }
+   .mapa li{
+    display: inline-block;
+    color: white;
+    padding: 10px;
+
+   }
+   /*--------------map-get en page talleres--------------*/
+   .esmaltado{
+    color: map-get($color-talleres, noCupo)
+   }
+   /*--------------extend en page formulario--------------*/
+   .botonForm{
+    @extend .botonIndex;
+    background-color: purple;
+   }
+    /*--------------mixins --------------*/
+    .tituloH1{
+      @include sizesH(2rem, 900px);
+
+    }
+    .tituloH1-1{
+      @include sizesH(2rem, 800px);
+    }
+    .tituloH2{
+      @include sizesH(1.5rem, 600px);
+    }

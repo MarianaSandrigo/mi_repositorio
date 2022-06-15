@@ -16,17 +16,17 @@ body {
 .logo {
   transform: scale(1.2); }
 
-.botonIndex {
+.botonIndex, .botonForm {
   padding: 15px;
   background-color: #9280a3;
   border-radius: 10px;
   border: 1px solid grey;
   transition: all 0.5s ease-in-out;
   border-radius: 5%; }
-  .botonIndex a {
+  .botonIndex a, .botonForm a {
     color: #10002B;
     text-decoration: none; }
-  .botonIndex:hover {
+  .botonIndex:hover, .botonForm:hover {
     background-color: #c9c6cb;
     padding: 20px;
     font-size: large;
@@ -167,3 +167,42 @@ footer .menu {
     grid-area: publicidad; }
   .sponsor {
     grid-area: sponsor; } }
+
+/*--------------mapa color-redes en page contacto--------------*/
+.icono-gmail {
+  background-color: red; }
+
+.icono-instagram {
+  background-color: #6d0d3d; }
+
+.icono-facebook {
+  background-color: blue; }
+
+.icono-whatsapp {
+  background-color: green; }
+
+.mapa li {
+  display: inline-block;
+  color: white;
+  padding: 10px; }
+
+/*--------------map-get en page talleres--------------*/
+.esmaltado {
+  color: red; }
+
+/*--------------extend en page formulario--------------*/
+.botonForm {
+  background-color: purple; }
+
+/*--------------mixins --------------*/
+.tituloH1 {
+  font-size: 2rem;
+  font-weight: 900px; }
+
+.tituloH1-1 {
+  font-size: 2rem;
+  font-weight: 800px; }
+
+.tituloH2 {
+  font-size: 1.5rem;
+  font-weight: 600px; }
