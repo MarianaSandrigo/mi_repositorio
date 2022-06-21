@@ -53,6 +53,9 @@ footer .menu {
   color: #4e1152; }
 
 /*-------------------index--------------------*/
+.inicio {
+  padding: 0 2rem 5rem 2rem; }
+
 .imgIndex1 {
   width: 30rem;
   height: 20rem;
@@ -134,7 +137,14 @@ footer .menu {
 .titTalleres {
   padding: 0.3% 1%; }
 
-/*--------------page donar--------------*/
+.aclaracionTalleres {
+  border: 2px solid grey;
+  box-shadow: shadow;
+  background-color: #f1eef3;
+  margin: 0 0 2rem 0;
+  padding: 2rem; }
+
+/*-------page donar--------------*/
 .cajaPagedonar {
   background-color: #f1e2fa; }
 
