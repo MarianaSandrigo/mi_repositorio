@@ -1,46 +1,50 @@
 body {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Tahoma, sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 /*---------encabezado------------*/
 .colorHeader {
   background-color: #4e1152;
-  border-bottom: 1px solid black;
-  margin-bottom: 5%; }
+  border-bottom: 1px solid white; }
 
 .logo {
-  height: 6rem;
-  transition: all 1s; }
+  height: 6rem; }
 
-.logo {
-  transform: scale(1.2); }
-
-.botonIndex, .botonForm {
+.botonIndex {
   padding: 15px;
   background-color: #9280a3;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid grey;
   transition: all 0.5s ease-in-out;
-  border-radius: 5%; }
-  .botonIndex a, .botonForm a {
+  border-radius: 5%;
+  margin: 1rem 30%; }
+  .botonIndex a {
     color: #10002B;
+    font-weight: 600;
     text-decoration: none; }
-  .botonIndex:hover, .botonForm:hover {
-    background-color: #c9c6cb;
+  .botonIndex:hover {
+    background-color: #4e1152;
     padding: 20px;
     font-size: large;
-    transform: translateX(5%); }
+    transform: translateX(3%); }
+
+.botonIndex a:hover {
+  color: #f1e2fa;
+  transition: all 0.5s ease-in-out; }
 
 /*---------footer----------------*/
 footer {
   background-color: #f9d4fa;
-  border-top: #4e1152 1px solid;
+  border-top: #4e1152 px solid;
   padding: 1%; }
-  footer a {
-    text-decoration: none; }
-  footer:hover {
-    text-decoration: underline; }
+
+footer a {
+  text-decoration: none; }
+
+footer a:hover {
+  text-decoration: underline; }
 
 footer .menu {
   font-weight: 600; }
@@ -53,38 +57,45 @@ footer .menu {
   color: #4e1152; }
 
 /*-------------------index--------------------*/
+p {
+  font-size: large; }
+
+.portada {
+  width: 100%;
+  background-size: cover; }
+
+.fotoPortada {
+  width: 100%;
+  height: auto; }
+
 .inicio {
-  padding: 0 2rem 5rem 2rem; }
+  padding: 5rem 3rem;
+  background-color: #faf8f7; }
 
 .imgIndex1 {
-  width: 30rem;
-  height: 20rem;
-  border-radius: 5%;
-  border: 1px solid grey; }
+  width: 20rem;
+  height: 15rem;
+  border-radius: 5%; }
+  @media only screen and (min-width: 968px) {
+    .imgIndex1 {
+      width: 30rem;
+      height: 20rem;
+      border-radius: 5%; } }
 
 .caja {
   background-color: #f1eef3;
-  margin-bottom: 2%;
-  margin-top: 4%;
-  padding: 3% 2rem 0 2rem; }
+  padding: 5rem 3rem 0 3rem;
+  margin: 2rem 0; }
 
 .imgIndex2 {
   width: 18rem;
   height: 15rem;
   border-radius: 5%;
-  border: 1px solid grey;
   transition: 0.5s; }
-  .imgIndex2:hover {
-    width: 18.5rem;
-    height: 15.5rem;
-    border-radius: 10%;
-    border: 2px solid #a07c7c; }
 
 .indexTalleres {
   width: 100vw;
-  background-color: #faf8f7;
-  margin: 2%;
-  border: 1px solid grey; }
+  background-color: #faf8f7; }
   .indexTalleres.h2 {
     padding: 2%;
     text-decoration: underline; }
@@ -92,15 +103,17 @@ footer .menu {
 .indexTalleres h3 {
   font-size: medium; }
 
+.h2 {
+  padding-top: 2%; }
+
 .cajaTalleres h3 a {
   text-decoration: none;
-  color: #4e1152;
-  font-size: medium; }
+  font-size: medium;
+  color: black;
+  font-size: large; }
   .cajaTalleres h3 a:hover {
-    text-decoration: none;
-    color: #541f86;
-    font-size: larger;
-    font-weight: 500;
+    text-decoration: underline;
+    color: #4e1152;
     transition: 0.3s; }
 
 .padreTalleres {
@@ -112,14 +125,18 @@ footer .menu {
 
 .cajaTalleres {
   margin: 1%;
-  padding: 1%; }
+  padding: 1.2%;
+  background-color: white;
+  height: 25rem; }
 
 /*--------------quienessomosPage--------------*/
 .article {
-  padding: 5%;
-  margin: 10% 2.5% 5% 2.5%;
+  padding: 5rem 15rem;
+  margin: 5% 5% 5% 2.5%;
   background-color: #f1e2fa;
   border: 1px solid #eddfdf; }
+  .article p, .article h2 {
+    padding: 1rem 3rem; }
 
 /*--------------formulario--------------*/
 .cajaForm {
@@ -135,7 +152,7 @@ footer .menu {
   padding: 0.4rem 2rem 10rem 2rem; }
 
 .titTalleres {
-  padding: 0.3% 1%; }
+  padding: 5% 1%; }
 
 .aclaracionTalleres {
   border: 2px solid grey;
@@ -151,7 +168,7 @@ footer .menu {
 .comoDonar {
   background-color: #f1ebf6;
   width: 100%;
-  height: 95%;
+  height: 70vh;
   padding: 5em;
   margin: 0; }
 
@@ -178,41 +195,6 @@ footer .menu {
   .sponsor {
     grid-area: sponsor; } }
 
-/*--------------mapa color-redes en page contacto--------------*/
-.icono-gmail {
-  background-color: red; }
-
-.icono-instagram {
-  background-color: #6d0d3d; }
-
-.icono-facebook {
-  background-color: blue; }
-
-.icono-whatsapp {
-  background-color: green; }
-
-.mapa li {
-  display: inline-block;
-  color: white;
-  padding: 10px; }
-
 /*--------------map-get en page talleres--------------*/
 .esmaltado {
   color: red; }
-
-/*--------------extend en page formulario--------------*/
-.botonForm {
-  background-color: purple; }
-
-/*--------------mixins --------------*/
-.tituloH1 {
-  font-size: 2rem;
-  font-weight: 900px; }
-
-.tituloH1-1 {
-  font-size: 2rem;
-  font-weight: 800px; }
-
-.tituloH2 {
-  font-size: 1.5rem;
-  font-weight: 600px; }

@@ -1,78 +1,98 @@
 @import 'variables';
 @import 'reset';
-@import 'mixins';
 
+  
   /*---------encabezado------------*/
   .colorHeader{
     background-color: $color-principal;
-    border-bottom: 1px solid black ;
-    margin-bottom: 5%;
+    border-bottom: 1px solid white ;
+  
   }
+      
   .logo{
     height: 6rem;
-    transition: all 1s;
-  }
-  .logo{
-    transform: scale(1.2);
   }
   .botonIndex{
     padding: 15px;
     background-color: $color-boton;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid $color-border;
     transition: all 0.5s ease-in-out;
     border-radius: 5%;
+    margin: 1rem 30%;
     a{
     color: #10002B;
+    font-weight: 600;
     text-decoration: none;
   }
 
   &:hover{
-  background-color: #c9c6cb;
+  background-color: $color-principal;
   padding: 20px;
   font-size: large;
-  transform: translateX(5%);
+  transform: translateX(3%);
+
   }
+}
+.botonIndex a:hover{
+  color: #f1e2fa;
+  transition: all 0.5s ease-in-out;
+  
 }
   /*---------footer----------------*/
   footer{
     background-color: #f9d4fa;
-    border-top: $color-principal 1px solid;
+    border-top: #4e1152 px solid;
     padding: 1%;
-  
-   a{
+  }
+  footer a{
     text-decoration: none;
   }
-  &:hover{
+  footer a:hover{
     text-decoration: underline;
   }
-}
   footer .menu{
     font-weight: 600;
   }
   .redes li {
     display: inline-block;
-    color: $color-principal;
+    color:   #4e1152;
   
   }
   .menu2 li {
-    color: $color-principal;
-  } 
+    color:  #4e1152;
+  }
   /*-------------------index--------------------*/
+  p{
+    font-size: large;
+  }
+  .portada{
+    width: 100%;
+  	background-size: cover;
+  }
+  .fotoPortada{
+    width: 100%;
+    height: auto;
+  }
   .inicio{
-    padding:0 2rem 5rem 2rem;
+    padding: 5rem 3rem;
+    background-color: #faf8f7;
   }
   .imgIndex1{
-    width: 30rem;
-    height: 20rem;
+    width: 20rem;
+    height: 15rem;
     border-radius: 5%;
-    border: 1px solid $color-border;
+
+    @media only screen and (min-width: 968px){
+      width: 30rem;
+      height: 20rem;
+      border-radius: 5%;
+    } 
   }
   .caja{
     background-color: #f1eef3;
-    margin-bottom: 2%;
-    margin-top: 4%;
-    padding: 3% 2rem 0 2rem;
+    padding: 5rem 3rem 0 3rem;
+    margin: 2rem 0;
     
   }
   
@@ -80,22 +100,13 @@
     width: 18rem;
     height: 15rem;
     border-radius: 5%;
-    border: 1px solid $color-border;
     transition: 0.5s;
- 
-    &:hover{
-      width: 18.5rem;
-      height: 15.5rem;
-      border-radius: 10%;
-      border: 2px solid rgb(160, 124, 124);
   } 
-}
-  
+ 
   .indexTalleres {
     width: 100vw;
     background-color: #faf8f7;
-    margin: 2%;
-    border: 1px solid $color-border;
+ 
 
     &.h2{
     padding: 2%;
@@ -104,19 +115,20 @@
 }
   .indexTalleres h3{
   font-size: medium;
-  
-  
+} 
+  .h2{
+   padding-top: 2%;
   }
   .cajaTalleres h3 a{
     text-decoration: none;
-    color: $color-principal;
     font-size: medium;
+    color: black;
+   font-size: large;
+   
   
   &:hover{
-    text-decoration: none;
-    color: #541f86;
-    font-size: larger;
-    font-weight: 500;
+    text-decoration: underline;
+    color:  $color-principal;
     transition: 0.3s;
   }
 }
@@ -129,15 +141,20 @@
   }
   .cajaTalleres{
     margin: 1%;
-    padding: 1%;
+    padding: 1.2%;
+    background-color: white;
+    height: 25rem;
   }
   
   /*--------------quienessomosPage--------------*/
   .article {
-    padding: 5%;
-    margin: 10% 2.5% 5% 2.5%;
+    padding:5rem 15rem;
+    margin: 5% 5% 5% 2.5%;
     background-color:  #f1e2fa;
     border: 1px solid rgb(237, 223, 223) ;
+    p ,h2{
+      padding: 1rem 3rem;
+    }
   }
   
   
@@ -155,7 +172,7 @@
     padding: 0.4rem 2rem 10rem 2rem;
   }
   .titTalleres{
-    padding: 0.3% 1%;
+    padding: 5% 1%;
   }
 
   .aclaracionTalleres{
@@ -173,7 +190,7 @@
   .comoDonar{
     background-color: #f1ebf6;
     width: 100%;
-    height: 95%;
+    height: 70vh;
     padding: 5em;
     margin: 0;
   }
@@ -206,36 +223,9 @@
   }
   }
   
-   /*--------------mapa color-redes en page contacto--------------*/
-   @each $icono, $valor in $color-redes {
-    .icono-#{$icono}{
-     background-color:$valor;
-      
-    }
-   }
-   .mapa li{
-    display: inline-block;
-    color: white;
-    padding: 10px;
-
-   }
+  
    /*--------------map-get en page talleres--------------*/
    .esmaltado{
     color: map-get($color-talleres, noCupo)
    }
-   /*--------------extend en page formulario--------------*/
-   .botonForm{
-    @extend .botonIndex;
-    background-color: purple;
-   }
-    /*--------------mixins --------------*/
-    .tituloH1{
-      @include sizesH(2rem, 900px);
-
-    }
-    .tituloH1-1{
-      @include sizesH(2rem, 800px);
-    }
-    .tituloH2{
-      @include sizesH(1.5rem, 600px);
-    }
+   
